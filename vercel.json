@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "routes": [
+    { "handle": "filesystem" },
     {
-      "source": "/(?!api|static|public|favicon.ico|robots.txt|_next)(.*)",
-      "destination": "/templates/index.html"
+      "src": "/.*",
+      "dest": "/templates/index.html"
     }
   ]
 }
