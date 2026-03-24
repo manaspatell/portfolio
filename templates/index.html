@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manas Patel - Software Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -31,14 +31,11 @@
                 
                 <div class="flex items-center space-x-4">
                     <div class="social-icons flex space-x-3">
-                        <a href="https://github.com/Harshx02" class="social-icon" aria-label="GitHub">
+                        <a href="https://github.com/manaspatell" class="social-icon" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/manaspatell/" class="social-icon" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://x.com/__HarshTiwari__" class="social-icon" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
                         </a>
                     </div>
                     
@@ -74,7 +71,7 @@
                             <span class="gradient-text">Manas Patel</span>
                         </h1>
                         <div class="text-2xl md:text-4xl font-semibold mb-6">
-                            <span class="typing-text" data-words='["DATA SCIENTIST", "ML ENGINEER", "PYTHON FULL STACK DEVELOPER", "AI ENTHUSIAST"]'></span>
+                            <span class="typing-text" data-words='["SOFTWARE DEVELOPER", "ML ENGINEER", "FULL STACK DEVELOPER", "AI ENTHUSIAST"]'></span>
                         </div>
                     </div>
                     
@@ -88,7 +85,7 @@
                         <a href="https://github.com/Harshx02?tab=repositories" class="btn-primary">
                             <i class="fas fa-code mr-2"></i>View Projects
                         </a>
-                        <a href="https://drive.google.com/file/d/12Y9V7CAIktPjwfcjvYzvMj3_bU4M9QyM/view?usp=sharing" class="btn-secondary">
+                        <a href="/public/cv/Manas_CV.pdf" class="btn-secondary" download rel="noopener">
                             <i class="fas fa-download mr-2"></i>Download Resume
                         </a>
                     </div>
@@ -97,8 +94,8 @@
                 <div class="hero-image-container animate-slide-in-right">
                     <div class="relative">
                         <div class="profile-image-wrapper animate-float">
-                            <img src="{{ url_for('static', filename='images/P1.jpg') }}" 
-                                 alt="Harsh Tiwari - Data Scientist" 
+                               <img src="/public/images/Manas Patel.png" 
+                                 alt="Manas Patel - Software Developer" 
                                  class="profile-image animate-glow">
                             <div class="profile-overlay"></div>
                         </div>
@@ -194,7 +191,7 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="skill-category">
-                    <h3 class="text-xl font-semibold mb-6 text-center">Data Science</h3>
+                    <h3 class="text-xl font-semibold mb-6 text-center">Machine Learning & AI</h3>
                     <div class="space-y-4">
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
@@ -206,22 +203,22 @@
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
                                 <span>Machine Learning</span>
-                                <span class="skill-percentage" data-target="35">0%</span>
+                                <span class="skill-percentage" data-target="75">0%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="35"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span>Data Analysis</span>
-                                <span class="skill-percentage" data-target="88">0%</span>
+                                <span>Deep Learning</span>
+                                <span class="skill-percentage" data-target="60">0%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
-                    <h3 class="text-xl font-semibold mb-6 text-center">Frontend</h3>
+                    <h3 class="text-xl font-semibold mb-6 text-center">MERN / MEAN Stack</h3>
                     <div class="space-y-4">
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
@@ -232,44 +229,44 @@
                         </div>
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span>React</span>
-                                <span class="skill-percentage" data-target="35">0%</span>
+                                <span>React / Angular</span>
+                                <span class="skill-percentage" data-target="70">0%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="35"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span>HTML/CSS</span>
-                                <span class="skill-percentage" data-target="90">0%</span>
+                                <span>Node.js & Express</span>
+                                <span class="skill-percentage" data-target="75">0%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
-                    <h3 class="text-xl font-semibold mb-6 text-center">Backend</h3>
+                    <h3 class="text-xl font-semibold mb-6 text-center">Backend & RPA</h3>
                     <div class="space-y-4">
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span>Flask</span>
+                                <span>Flask / APIs</span>
                                 <span class="skill-percentage" data-target="85">0%</span>
                             </div>
                             <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span>SQL</span>
-                                <span class="skill-percentage" data-target="80">0%</span>
+                                <span>MongoDB</span>
+                                <span class="skill-percentage" data-target="70">0%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span>APIs</span>
-                                <span class="skill-percentage" data-target="55">0%</span>
+                                <span>RPA (UiPath / Automation)</span>
+                                <span class="skill-percentage" data-target="50">0%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="55"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="50"></div></div>
                         </div>
                     </div>
                 </div>
@@ -288,8 +285,8 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="{{ url_for('static', filename='images/mlproject.jpg') }}">
+                        <div class="project-image">
+                        <img src="/static/images/mlproject.jpg">
                     </div>
                     <br>
                     <div class="project-content">
@@ -322,7 +319,7 @@ insights for improved healthcare decision-making.
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="{{ url_for('static', filename='images/tableauDashboard.png') }}">
+                        <img src="/static/images/tableauDashboard.png">
                     </div>
                     <div class="project-content">
                         <h3 class="text-xl font-semibold mb-3">Data Science Job Salaries Dashboard</h3>
@@ -354,7 +351,7 @@ structured data representation.
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="{{ url_for('static', filename='images/qrImage.jpg') }}">
+                        <img src="/static/images/qrImage.jpg">
                     </div>
                     <div class="project-content">
                         <h3 class="text-xl font-semibold mb-3">QR-Code Generator</h3>
@@ -397,167 +394,96 @@ enhanced readability.
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- certficate separate div -->
-
-                
+                <!-- Certificates pulled from public/images/certi -->
                 <div class="certification-card animate-fade-in-up" data-delay="100">
-                    <div class="certification-icon">
-                        <i class="fas fa-certificate text-4xl text-blue-400"></i>
+                    <a href="/public/certificates/cert1.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20100325.png" alt="Certificate 1" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">Computational Theory: Language Principles & Finite Automata Theory</h3>
+                        <p class="text-xs text-gray-400">Infosys Springboard — Foundation in formal languages, automata, finite state machines; strengthened analytical thinking and understanding of computation.</p>
                     </div>
-                    <div class="certification-content">
-                        <h3 class="text-xl font-semibold mb-2">Cloud Computing</h3>
-                        <p class="text-gray-400 mb-3">Cloud Computing</p>
-                        <div class="certification-meta">
-                            <span class="certification-issuer">
-                                <i class="fas fa-university mr-2"></i>Nptel
-                            </span>
-                            <span class="certification-date">
-                                <i class="fas fa-calendar mr-2"></i>2024
-                            </span>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1On3SYoCrDWWoeZJq92q5fofWkrhXMTm_/view?usp=sharing" target="_blank" class="certification-badge">
-                        <div class="certification-badge">
-                            <span class="badge-verified">
-                                <i class="fas fa-check-circle mr-1"></i>Verified
-                            </span>
-                        </div>
-                        </a>
+                </div>
+
+                <div class="certification-card animate-fade-in-up" data-delay="200">
+                    <a href="/public/certificates/cert2.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20100411.png" alt="Certificate 2" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">Build Generative AI Apps and Solutions with No-Code Tools</h3>
+                        <p class="text-xs text-gray-400">Infosys Springboard — Designed and prototyped AI-powered apps using no-code platforms; focused on generative AI workflows, automation tools, and rapid deployment of intelligent solutions.</p>
                     </div>
                 </div>
 
                 <div class="certification-card animate-fade-in-up" data-delay="300">
-                    <div class="certification-icon">
-                        <i class="fas fa-chart-line text-4xl text-purple-400"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3 class="text-xl font-semibold mb-2">Data Analysis</h3>
-                        <p class="text-gray-400 mb-3">Data Analysis with Tableau</p>
-                        <div class="certification-meta">
-                            <span class="certification-issuer">
-                                <i class="fas fa-university mr-2"></i>Coursera
-                            </span>
-                            <span class="certification-date">
-                                <i class="fas fa-calendar mr-2"></i>2024
-                            </span>
-                        </div>
-                        <a href="https://drive.google.com/file/d/17JwdqAtAGfSVhwlFLMGrVTakbWYnvF0X/view?usp=sharing" target="_blank" class="certification-badge"></a>
-                        <div class="certification-badge">
-                            <span class="badge-verified">
-                                <i class="fas fa-check-circle mr-1"></i>Verified
-                            </span>
-                        </div>
-                        </a>
+                    <a href="/public/certificates/cert3.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20100454.png" alt="Certificate 3" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM</h3>
+                        <p class="text-xs text-gray-400">Infosys Springboard — Focused on prompt engineering techniques, large language models (LLMs), and generative AI applications; improved prompt design and AI output optimization for practical automation and content generation.</p>
                     </div>
                 </div>
-
-                
-                <div class="certification-card animate-fade-in-up" data-delay="500">
-                    <div class="certification-icon">
-                        <i class="fas fa-database text-4xl text-orange-400"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3 class="text-xl font-semibold mb-2">SQL & Databases</h3>
-                        <p class="text-gray-400 mb-3">Database Management and SQL</p>
-                        <div class="certification-meta">
-                            <span class="certification-issuer">
-                                <i class="fas fa-university mr-2"></i>Board Infinity
-                            </span>
-                            <span class="certification-date">
-                                <i class="fas fa-calendar mr-2"></i>2024
-                            </span>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1NYkksey1nM0UbuSOThFcmbueRMqO653H/view?usp=sharing" target="_blank" class="certification-badge">
-                        <div class="certification-badge">
-                            <span class="badge-verified">
-                                <i class="fas fa-check-circle mr-1"></i>Verified
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-   
 
                 <div class="certification-card animate-fade-in-up" data-delay="400">
-                    <div class="certification-icon">
-                        <i class="fab fa-react text-4xl text-cyan-400"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3 class="text-xl font-semibold mb-2">Data Structure and Algorithms</h3>
-                        <p class="text-gray-400 mb-3">Data Structure and Algorithms</p>
-                        <div class="certification-meta">
-                            <span class="certification-issuer">
-                                <i class="fas fa-university mr-2"></i>Udemy
-                            </span>
-                            <span class="certification-date">
-                                <i class="fas fa-calendar mr-2"></i>2023
-                            </span>
-                        </div>
-                        <div class="certification-badge">
-                            <a href="https://drive.google.com/file/d/1NpJc1e0oM1fenfIlU9O1E_gK4u1XOQMM/view?usp=sharing" target="_blank" class="badge-verified">
-                            <span class="badge-verified">
-                                <i class="fas fa-check-circle mr-1"></i>Verified
-                            </a>
-                            </span>
-                        </div>
+                    <a href="/public/certificates/cert4.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20100530.png" alt="Certificate 4" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                        <p class="text-xs text-gray-400">Oracle University — Validates core AI and ML concepts in cloud environments, including data-driven models and AI services on OCI; demonstrates ability to apply AI fundamentals at scale.</p>
                     </div>
                 </div>
 
-
-
-                <div class="certification-card animate-fade-in-up" data-delay="100">
-                    <div class="certification-icon">
-                        <i class="fas fa-certificate text-4xl text-blue-400"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3 class="text-xl font-semibold mb-2">Python</h3>
-                        <p class="text-gray-400 mb-3">Python Complete Masterclass for Beginners</p>
-                        <div class="certification-meta">
-                            <span class="certification-issuer">
-                                <i class="fas fa-university mr-2"></i>Udemy
-                            </span>
-                            <span class="certification-date">
-                                <i class="fas fa-calendar mr-2"></i>2023
-                            </span>
-                        </div>
-                        <div class="certification-badge">
-                            <a href="https://drive.google.com/file/d/1CN7Yy5FrF738Bz7zwJ3Wo3didCw0s5sh/view?usp=sharing" target="_blank" class="badge-verified">
-                            <span class="badge-verified">
-                                <i class="fas fa-check-circle mr-1"></i>Verified
-                            </span>
-                            </a>
-                        </div>
+                <div class="certification-card animate-fade-in-up" data-delay="500">
+                    <a href="/public/certificates/cert5.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20100745.png" alt="Certificate 5" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">Social Networks — NPTEL Elite Certification</h3>
+                        <p class="text-xs text-gray-400">NPTEL / IIT Madras (SWAYAM) — 12-week course covering network structures, graph theory, information diffusion, and social network analysis. Elite certification (60% consolidated) demonstrating ability to analyze complex networked systems.</p>
                     </div>
                 </div>
 
-                
-                <div class="certification-card animate-fade-in-up" data-delay="200">
-                    <div class="certification-icon">
-                        <i class="fas fa-brain text-4xl text-green-400"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3 class="text-xl font-semibold mb-2">Artificial Intelligence</h3>
-                        <p class="text-gray-400 mb-3">Getting Started with AI and Machine Learning</p>
-                        <div class="certification-meta">
-                            <span class="certification-issuer">
-                                <i class="fas fa-university mr-2"></i>Coursera
-                            </span>
-                            <span class="certification-date">
-                                <i class="fas fa-calendar mr-2"></i>2023
-                            </span>
-                        </div>
-                        <div class="certification-badge">
-                            <a href="https://drive.google.com/file/d/1mFD6LPGCkuiQv14ccyUtAiaI1Lwg0Feq/view?usp=sharing" target="_blank" class="badge-verified">
-                                <span>
-                                    <i class="fas fa-check-circle mr-1"></i>Verified
-                                </span>
-                            </a>
-                        </div>
-
+                <div class="certification-card animate-fade-in-up" data-delay="600">
+                    <a href="/public/certificates/cert6.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20100834.png" alt="Certificate 6" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">The Complete 2024 Web Development Bootcamp</h3>
+                        <p class="text-xs text-gray-400">Udemy (Dr. Angela Yu) — Full-stack web development covering HTML, CSS, JavaScript, Node.js, Express, databases, and modern development practices for building responsive, production-ready applications.</p>
                     </div>
                 </div>
 
+                <div class="certification-card animate-fade-in-up" data-delay="700">
+                    <a href="/public/certificates/cert7.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20101008.png" alt="Certificate 7" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">Automation Anywhere Certified Essentials Professional</h3>
+                        <p class="text-xs text-gray-400">Automation Anywhere — Certified Essentials Automation Professional; validates RPA skills in building, deploying, and managing software bots, designing efficient automation workflows to improve productivity.</p>
+                    </div>
+                </div>
 
+                <div class="certification-card animate-fade-in-up" data-delay="800">
+                    <a href="/public/certificates/cert8.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20101209.png" alt="Certificate 8" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">Introduction to Hardware and Operating Systems</h3>
+                        <p class="text-xs text-gray-400">IBM / Coursera — Foundation in computer hardware components, system architecture, and operating system concepts, including process management, memory handling, and system-level operations.</p>
+                    </div>
+                </div>
+
+                <div class="certification-card animate-fade-in-up" data-delay="900">
+                    <a href="/public/certificates/cert9.html" target="_blank">
+                        <img src="/public/images/certi/Screenshot%202026-03-24%20101302.png" alt="Certificate 9" class="w-full h-48 object-contain rounded-md shadow-md">
+                    </a>
+                    <div class="certification-caption mt-3 text-gray-300">
+                        <h3 class="text-sm font-semibold">The Bits and Bytes of Computer Networking</h3>
+                        <p class="text-xs text-gray-400">Google / Coursera — Comprehensive networking fundamentals covering TCP/IP, network models, routing, DNS, and troubleshooting; strengthened understanding of data transmission and internet infrastructure.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -631,13 +557,13 @@ enhanced readability.
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="text-gray-400">
-                    © 2025 Manas Patel. All rights reserved. Built with ❤️ using Flask, Tailwind CSS, and JavaScript.
+                    ©2026 Manas Patel. All rights reserved. Built with ❤️ HTML5, Tailwind CSS and JavaScript.
                 </p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+    <script src="/static/javascript/script.js"></script>
 </body>
 </html>

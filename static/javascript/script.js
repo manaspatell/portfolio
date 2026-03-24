@@ -205,9 +205,12 @@ function initContactForm() {
         submitBtn.disabled = true;
         
         try {
+            // Convert FormData to JSON for the Express server
+            const payload = Object.fromEntries(formData.entries());
             const response = await fetch('/api/contact', {
                 method: 'POST',
-                body: formData
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
             });
             
             const result = await response.json();
