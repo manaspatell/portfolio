@@ -153,32 +153,11 @@ function initSkillBars() {
 
 function animateSkillBars(skillCategory) {
     const skillBars = skillCategory.querySelectorAll('.skill-progress');
-
+    
     skillBars.forEach((bar, index) => {
         setTimeout(() => {
-            const width = parseInt(bar.getAttribute('data-width')) || 0;
+            const width = bar.getAttribute('data-width');
             bar.style.width = width + '%';
-
-            // Update the numeric percentage text next to the bar (if present)
-            const skillItem = bar.closest('.skill-item');
-            const pctEl = skillItem ? skillItem.querySelector('.skill-percentage') : null;
-            if (pctEl) {
-                // Animate number from 0 -> width
-                let current = 0;
-                const duration = 800; // ms
-                const stepTime = 16; // ~60fps
-                const steps = Math.max(1, Math.round(duration / stepTime));
-                const increment = width / steps;
-
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= width) {
-                        current = width;
-                        clearInterval(timer);
-                    }
-                    pctEl.textContent = Math.round(current) + '%';
-                }, stepTime);
-            }
         }, index * 200); // Staggered animation
     });
 }
