@@ -774,3 +774,38 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+/* Certifications responsive tweaks */
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+}
+
+.certification-card img {
+    width: 100%;
+    height: auto !important;
+    max-height: 360px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.certification-caption h3 {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .certification-card {
+        padding: 0.5rem;
+    }
+    .certification-card img {
+        max-height: 220px;
+    }
+    .certification-caption h3 {
+        font-size: 0.95rem;
+    }
+    .certification-caption p {
+        font-size: 0.78rem;
+    }
+}
